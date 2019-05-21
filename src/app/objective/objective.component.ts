@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ObjectiveComponent implements OnInit {
 
   constructor() { }
-  userArray=[{'name':'dummy'}]
+  userArray=[{'name':'dummy name'}]
   ngOnInit() {
   }
 

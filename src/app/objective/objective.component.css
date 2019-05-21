@@ -35,3 +35,10 @@ textarea{
   margin: 15px;
 }
 
+.adduser{
+  text-align: right;
+}
+.addU{
+  color: grey;
+  cursor: pointer;
+}
