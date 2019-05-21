@@ -1,0 +1,104 @@
+.accor-head{
+  background-color: black;
+  color: white;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+ 
+  
+}
+
+.accordian-section{
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+  background-color: white
+}
+.summary-section{
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+
+/* stepper section */
+
+/* basic step */
+.step{
+  margin-top: -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+.node {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display:inline-block;
+    background-color: rgba(201, 201, 201, 1);
+    transition: all 500ms ease;
+    z-index: 0;
+}
+.line{
+  height: 100px;
+  width: 2px;
+  margin-top: -6px;
+  margin-right: 4px;
+  border: 1px solid rgba(201, 201, 201, 1);
+  z-index: -1;
+
+}
+.step-text{
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  transition: all 500ms ease;
+  max-height: 18px;
+  text-align: right;
+}
+
+/* progress step  */
+.prev-step-node{
+  background-color: rgba(92, 184, 92, 1) !important;
+  height: 10px !important;
+  width: 10px !important;
+  margin-right: 0px;
+}
+.current-step-node{
+  background-color: rgba(92, 184, 92, 1) !important;
+  height: 20px !important;
+  width: 20px !important;
+  margin-right: -5px;
+}
+.prev-step-line{
+  border: 1px solid rgba(92, 184, 92, 1) !important;
+}
+
+.step-text-current{
+  color: rgba(92, 184, 92, 1) !important;
+  font-size: 14px !important;
+}
+.step-text-previous{
+  color: rgba(92, 184, 92, 1) !important;
+  
+}
+
+
+/* buttons */
+.clear-button{
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgba(201, 201, 201, 1);
+    border:  none;
+  height: 40px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.submit-button{
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgba(92, 184, 92, 1);
+  border:  none;
+  height: 40px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}

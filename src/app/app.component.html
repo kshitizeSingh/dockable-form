@@ -1,0 +1,82 @@
+<br>
+<br>
+<br>
+
+<main class="container">
+<div class="row">
+  <div class="col-sm-2">
+      <div class="step">
+        <span class="step-text" [ngClass]="{'step-text-previous': step>1, 'step-text-current':step==1}"> DEFINE OBJECTIVE 
+          <div class="node" [ngClass]="{'prev-step-node': step>1, 'current-step-node':step==1}"></div>
+        </span>
+        <div class="line" [ngClass]="{'prev-step-line': step>1}"></div>
+      </div>
+      <div class="step">
+        <span class="step-text" [ngClass]="{'step-text-previous': step>2, 'step-text-current':step==2}"> KRA <div class="node" [ngClass]="{'prev-step-node': step>2 , 'current-step-node':step==2}"></div></span>
+        <div class="line" [ngClass]="{'prev-step-line': step>2}"></div>
+      </div>
+      <div class="step">
+        <span class="step-text" [ngClass]="{'step-text-previous': step>3, 'step-text-current':step==3}"> WEIGHTAGE & PRIVACY  <div class="node" [ngClass]="{'prev-step-node': step>3, 'current-step-node':step==3}"></div></span>
+        <div class="line" [ngClass]="{'prev-step-line': step>3}"></div>
+      </div>
+      <div class="step">
+        <span class="step-text" [ngClass]="{'step-text-previous': step>4, 'step-text-current':step==4}"> SUBMIT  <div class="node" [ngClass]="{'prev-step-node': step>4 , 'current-step-node':step==4}"></div></span>
+      </div>
+  </div>
+
+  <div class="col-sm-7">
+    <div>
+      <div for="accordian-section" class="accordian-section">
+        <header class="accor-head" (click)="showAccordianSection('defineObjective')">DEFINE OBJECTIVE</header>
+        <section for="defineObjective" *ngIf="showSection=='defineObjective'">
+          <app-objective></app-objective>
+        </section>
+      </div>
+      <div for="accordian-section" class="accordian-section">
+        <header class="accor-head" (click)="showAccordianSection('KEY')">KEY RESULT AREA</header>
+        <section for="defineObjective" *ngIf="showSection=='KEY'">
+        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+        <br>
+        <br>
+        <br>
+        <br>
+        </section>
+      </div>
+      <div for="accordian-section" class="accordian-section">
+        <header class="accor-head" (click)="showAccordianSection('WEIGHT')">WEIGHTAGE & PRIVACY</header>
+        <section for="defineObjective" *ngIf="showSection=='WEIGHT'">
+        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+        <br>
+        <br>
+        <br>
+        <br>
+        </section>
+      </div>
+    </div>
+    <div for="button" class="row">
+      <div class="col-sm-6">
+        <button class="clear-button">CLEAR FORM</button>
+      </div>
+      <div class="col-sm-6">
+        <button class="submit-button">SUBMIT FORM</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+  <div class="summary-section">
+    <app-summary ></app-summary>
+  </div>
+  </div>
+
+</div>
+</main>
+
+
+
+
+
+
+
+
+
+

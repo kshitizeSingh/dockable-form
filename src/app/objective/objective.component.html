@@ -1,0 +1,56 @@
+<div class="form-container">
+  
+  <form>
+    <input type="text" placeholder="Enter Title" class="input-title">
+  </form>
+
+  <h4 class="field-label">Description</h4>
+  <textarea rows="5">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </textarea>
+
+  <h4 class="field-label">Timeline</h4>
+  <div class="row">
+    <div class="col-sm-6">
+      <input type="date">
+    </div>
+    <div class="col-sm-6">
+      <input type="date">
+    </div>
+  </div>
+
+   <h4 class="field-label">Owner</h4>
+   <select>
+     <option> Individual</option>
+     <option> Multiple</option>
+     <option> Shared</option>
+   </select>
+   <div for="addUser" class="addUser">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmp7Zkhf_H_iJDUGaaRhchdSo0Qt6xUqQJ2HxC9kmAvpvmhxG6" class="userlogo"> <input type="text" placeholder="Enter Title" class="">
+   </div>
+
+   <h4 class="field-label">Alingment</h4>
+   <select>
+     <option> FUNCTIONAL SKILL</option>
+     <option> BSC CATEGORY</option>
+   </select>
+   <div for="alingment">
+     <div *ngIf="alingmentType=='functional'">
+       <input type="radio" name="alingment"> Engineering
+       <input type="radio" name="alingment"> Design
+       <input type="radio" name="alingment"> Sales
+     </div>
+     <div *ngIf="alingmentType=='Bcs'">
+       <input type="radio" name="alingment"> Buisness
+       <input type="radio" name="alingment"> People
+       <input type="radio" name="alingment"> Process
+       <input type="radio" name="alingment"> Customer
+     </div>
+   </div>
+
+
+
+
+</div>
+
+
