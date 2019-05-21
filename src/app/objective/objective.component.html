@@ -20,30 +20,32 @@
   </div>
 
    <h4 class="field-label">Owner</h4>
-   <select>
+    <div class="col-sm-6">
+   <select class="form-control">
      <option> Individual</option>
      <option> Multiple</option>
      <option> Shared</option>
    </select>
+    </div>
    <div for="addUser" class="addUser">
      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmp7Zkhf_H_iJDUGaaRhchdSo0Qt6xUqQJ2HxC9kmAvpvmhxG6" class="userlogo"> <input type="text" placeholder="Enter Title" class="">
    </div>
 
    <h4 class="field-label">Alingment</h4>
    <div class="col-sm-6">
-     <select class="form-control">
-     <option> FUNCTIONAL SKILL</option>
-     <option> BSC CATEGORY</option>
+     <select class="form-control" [(ngModel)]="alingmentType">
+     <option value="functional"> FUNCTIONAL SKILL</option>
+     <option value="bsc"> BSC CATEGORY</option>
    </select>
    </div>
-   
+
    <div for="alingment">
      <div *ngIf="alingmentType=='functional'">
        <input type="radio" name="alingment"> Engineering
        <input type="radio" name="alingment"> Design
        <input type="radio" name="alingment"> Sales
      </div>
-     <div *ngIf="alingmentType=='Bcs'">
+     <div *ngIf="alingmentType=='bsc'">
        <input type="radio" name="alingment"> Buisness
        <input type="radio" name="alingment"> People
        <input type="radio" name="alingment"> Process
