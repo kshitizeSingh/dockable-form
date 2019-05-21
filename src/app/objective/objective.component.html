@@ -30,7 +30,7 @@
     </div>
    <div for="addUser" class="addUser" *ngFor="let x of userArray">
      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmp7Zkhf_H_iJDUGaaRhchdSo0Qt6xUqQJ2HxC9kmAvpvmhxG6" class="userlogo"> 
-     <input type="text" placeholder="Enter Title" [(ngModel)]="userArray['name']" class="">
+     <input type="text" placeholder="Enter Title" [(ngModel)]="x['name']" class="">
    </div>
    <div *ngIf="ownerType=='multiple'" (click)="userArray.push({'name':'dummy'})">adduser</div>
    {{userArray|json}}
