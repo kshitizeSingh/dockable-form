@@ -9,8 +9,8 @@
 /* @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss"; */
-@import "~angular-bootstrap-md/scss/bootstrap/bootstrap.scss";
-@import "~angular-bootstrap-md/scss/mdb-free.scss";
+/* @import "~angular-bootstrap-md/scss/bootstrap/bootstrap.scss";
+@import "~angular-bootstrap-md/scss/mdb-free.scss"; */
 
 body{
  background-color:  #f5f7f8d2;
