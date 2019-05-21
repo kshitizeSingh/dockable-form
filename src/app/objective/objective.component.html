@@ -21,15 +21,19 @@
 
    <h4 class="field-label">Owner</h4>
     <div class="col-sm-6">
-   <select class="form-control">
-     <option> Individual</option>
-     <option> Multiple</option>
-     <option> Shared</option>
+   <select class="form-control" [(ngModel)]="ownerType">
+     <option value="individual"> Individual</option>
+     <option value="multiple"> Multiple</option>
+     <option value="shared"> Shared</option>
    </select>
+   
     </div>
-   <div for="addUser" class="addUser">
-     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmp7Zkhf_H_iJDUGaaRhchdSo0Qt6xUqQJ2HxC9kmAvpvmhxG6" class="userlogo"> <input type="text" placeholder="Enter Title" class="">
+   <div for="addUser" class="addUser" *ngFor="let x of userArray">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmp7Zkhf_H_iJDUGaaRhchdSo0Qt6xUqQJ2HxC9kmAvpvmhxG6" class="userlogo"> 
+     <input type="text" placeholder="Enter Title" [(ngModel)]="userArray['name']" class="">
    </div>
+   <div *ngIf="ownerType=='multiple'" (click)="userArray.push({'name':'dummy'})">adduser</div>
+   {{userArray|json}}
 
    <h4 class="field-label">Alingment</h4>
    <div class="col-sm-6">
